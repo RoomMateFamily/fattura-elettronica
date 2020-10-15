@@ -1,4 +1,4 @@
 export declare enum FormatoTrasmissione {
-    PubblicaAmministrazione = "FPA 12",
-    Privati = "FPR 12"
+    PubblicaAmministrazione = "FPA12",
+    Privati = "FPR12"
 }

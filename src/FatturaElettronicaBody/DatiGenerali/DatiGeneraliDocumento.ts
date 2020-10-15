@@ -32,7 +32,7 @@ export interface DatiGeneraliDocumento {
     ScontoMaggiorazione?: ScontoMaggiorazione[];
 
     /**Importo totale del documento al netto dell'eventuale sconto e comprensivo di imposta a debito del cessionario /committente. */
-    ImportoTotaleDocumento?: number | null;
+    ImportoTotaleDocumento?: string | number | null;
 
     /**Eventuale arrotondamento sul totale documento (ammette anche il segno negativo). */
     Arrotondamento?: number | null;

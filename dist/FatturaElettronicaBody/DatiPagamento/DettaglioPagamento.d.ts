@@ -18,7 +18,7 @@ export interface DettaglioPagamento {
      */
     DataScadenzaPagamento?: Date | string | null;
     /**Importo relativo al pagamento. */
-    ImportoPagamento: number;
+    ImportoPagamento: number | string;
     /**Nei casi di modalità di pagamento in cui ha senso l'indicazione dellìufficio postale. */
     CodUfficioPostale?: string;
     /**Cognome del quietanziante (nel caso di campo ModalitaPagamento = MP04). */

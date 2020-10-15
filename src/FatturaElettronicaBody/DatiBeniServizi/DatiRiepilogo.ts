@@ -4,10 +4,10 @@ import { Natura } from '../../Tabelle/Natura';
 /**Blocco sempre obbligatorio contenente i dati di riepilogo per ogni aliquota IVA o natura. */
 export interface DatiRiepilogo {
     /**Aliquota (%) IVA. */
-    AliquotaIVA: number;
+    AliquotaIVA: number | string;
 
     /**Natura delle operazioni qualora non rientrino tra quelle imponibili. */
-    Natura?: Natura;
+    Natura?: Natura | string;
 
     /**Corrispettivi relativi alle cessioni accessorie (es. imballaggi etc.) qualora presenti. */
     SpeseAccessorie?: number | null;
@@ -19,13 +19,13 @@ export interface DatiRiepilogo {
      * Questo valore rappresenta: base imponibile per le operazioni soggette ad IVA; importo, per le operazioni che non
      * rientrano tra quelle imponibili.
      */
-    ImponibileImporto: number;
+    ImponibileImporto: number | string;
 
     /**Imposta risultante dall'applicazione dell'aliquota IVA all'imponibile. */
-    Imposta: number;
+    Imposta: number | string;
 
     /**Eseigibilità IVA (immediata ai sensi Art. 6 comma 5 del DPR 633 1972, oppure differita). */
-    EsigibilitaIVA?: EsigibilitaIVA;
+    EsigibilitaIVA?: EsigibilitaIVA | string;
 
     /**Norma di riferimento (obbligatoria nei casi in cui Natura è valorizzato). */
     RiferimentoNormativo?: string;

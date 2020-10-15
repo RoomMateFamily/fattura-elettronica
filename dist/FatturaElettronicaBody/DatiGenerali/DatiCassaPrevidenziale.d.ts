@@ -11,7 +11,7 @@ export interface DatiCassaPrevidenziale {
     /**Importo sul quale applicare il contributo cassa previdenziale. */
     ImponibileCassa?: number;
     /**Aliquota (%) IVA applicata. */
-    AliquotaIVA: number;
+    AliquotaIVA: number | string;
     /**Indica se il contributo cassa è soggetto a ritenuta. */
     Ritenuta?: string;
     /**Nei casi di Aliquota IVA pari a zero. */
